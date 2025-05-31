@@ -5,12 +5,11 @@
 
 			<div class="bg-white rounded-lg shadow-sm overflow-hidden border border-light">
 				<CvHeader
-					:position="profileData.position[currentLanguage]"
-					:contacts="profileData.contacts" />
+					:position="profileData.position" />
 
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-10">
 					<div class="lg:col-span-2 space-y-8">
-						<CvAbout :aboutText="profileData.aboutText[currentLanguage]" />
+						<CvAbout :aboutText="profileData.aboutText" />
 						<CvExperience :experiences="profileData.experiences" :currentLanguage="currentLanguage" />
 						<CvEducation :education="profileData.education" :currentLanguage="currentLanguage" />
 					</div>
@@ -48,14 +47,14 @@ const i18n = useI18n();
 
 const currentLanguage = ref(localStorage.locale ?? 'en');
 
-const profileData = computed(() => {
-  return currentLanguage.value === 'es' ? esData : enData
-})
-
 const changeLanguage = async () => {
     currentLanguage.value = localStorage.locale = currentLanguage.value === 'es' ? 'en' : 'es';
     i18n.setLocale(currentLanguage.value);
 }
+
+const profileData = computed(() => {
+  return currentLanguage.value === 'es' ? esData : enData
+})
 </script>
 
 <style>

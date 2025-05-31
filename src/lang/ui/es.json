@@ -3,8 +3,13 @@
   "about": "Sobre Mí",
   "experience": "Experiencia Laboral",
   "education": "Educación",
+  "responsibilities": "Responsabilidades",
   "skills": "Habilidades Técnicas",
   "languages": "Idiomas",
   "certifications": "Certificaciones",
-  "contact": "Contacto"
+  "contact": "Contacto",
+  "lang": {
+    "english" : "Ingles",
+    "spanish" : "Español"
+  }
 }

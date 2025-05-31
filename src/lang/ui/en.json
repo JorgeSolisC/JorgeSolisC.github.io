@@ -3,8 +3,13 @@
   "about": "About Me",
   "experience": "Work Experience",
   "education": "Education",
+  "responsibilities": "Responsibilities",
   "skills": "Technical Skills",
   "languages": "Languages",
   "certifications": "Certifications",
-  "contact": "Contact"
+  "contact": "Contact",
+  "lang": {
+    "english" : "English",
+    "spanish" : "Spanish"
+  }
 }

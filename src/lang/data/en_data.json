@@ -1,31 +1,85 @@
 {
-  "name": "Alex Johnson",
-  "position": "Senior Full-Stack Developer",
-  "contacts": {
-    "email": "alex.johnson@example.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "San Francisco, USA"
-  },
-  "aboutText": "Innovative software engineer with 7+ years of experience...",
-  "experiences": [
-    {
-      "title": "Senior Full-Stack Developer",
-      "company": "CloudTech Solutions",
-      "period": "Jan 2020 - Present",
-      "description": "Lead developer for enterprise SaaS platform...",
-      "skills": ["Vue 3", "Node.js", "AWS"]
+    "name": "Alex Johnson",
+    "position": "Full-Stack Developer",
+    "aboutText": "I'm a dedicated person with strong ethics and adaptability to new technologies. Through disciplined work and passion for development, I create innovative solutions that meet both personal and organizational objectives. My programming skills are enhanced by analytical thinking and problem-solving abilities.",
+    "experiences": [
+        {
+            "title": "General Mechanic",
+            "location": "Teocaltiche, Jalisco. México",
+            "company": "Transmisiones Díaz",
+            "period": "August 2014 - December 2014",
+            "description": "Corrective and preventive maintenance for internal combustion vehicles.",
+            "skills": [
+                "Automotive maintenance",
+                "Mechanical diagnostics",
+                "Engine repair"
+            ]
+        },
+        {
+            "title": "FullStack Developer",
+            "location": "Aguascalientes, Ags. México",
+            "company": "CCEO – Software Development",
+            "period": "August 2018 - Present",
+            "description": "Development of enterprise web platforms (ERP, Ecommerce) using Laravel as main framework. Involved in the complete development cycle, from requirements analysis to production implementation. Delivered technical solutions following quality standards and MVC architecture.",
+            "responsibilities": [
+                "Backend development with PHP/Laravel and MySQL databases",
+                "Frontend interfaces creation with Vue.js",
+                "Design and implementation of RESTful APIs",
+                "Active participation in Scrum teams (planning, sprints, retrospectives)",
+                "Version control with Git/GitHub",
+                "Bug resolution and performance optimization",
+                "Implementation of automated testing"
+            ],
+            "skills": [
+                "Laravel",
+                "Vue",
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "Bootstrap",
+                "CSS/HTML",
+                "SCRUM",
+                "MVC Architecture",
+                "Automated Testing",
+                "API Development",
+                "Version Control (Git)",
+                "Debugging"
+            ]
+        },
+        {
+            "title": "Collaborator",
+            "location": "Aguascalientes, Ags. Mexico",
+            "company": "MyShell Software Lab",
+            "period": "March 2020 - Present",
+            "description": "Collaborated at MyShell by adding new features to existing npm packages for Vue.js and building custom tools to streamline developers' workflows.",
+            "skills": [
+                "NPM",
+                "Vue"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Technical High School Diploma",
+            "institution": "CBTIS 247, Teocaltiche",
+            "period": "2011 - 2014",
+            "description": "Automotive Maintenance Technician."
+        },
+        {
+            "degree": "English Certification",
+            "institution": "English For All",
+            "period": "2014 - 2017",
+            "description": "English Technician."
+        },
+        {
+            "degree": "Bachelor's in Computer Systems Engineering",
+            "institution": "Nochistlán Higher Technological Institute",
+            "period": "2014 - 2018",
+            "description": "Training in software development, networking, and databases."
+        }
+    ],
+    "socialLinks": {
+        "linkedin": "linkedin.com/in/jorge-solisc",
+        "github": "github.com/JorgeSolisC"
     }
-  ],
-  "education": [
-    {
-      "degree": "Master in Software Engineering",
-      "institution": "Stanford University",
-      "period": "2015 - 2017",
-      "description": "Specialized in Distributed Systems..."
-    }
-  ],
-  "socialLinks": {
-    "linkedin": "",
-    "github": ""
-  }
 }

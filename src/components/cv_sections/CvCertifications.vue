@@ -8,9 +8,9 @@
 			<div
 				v-for="(cert, index) in certifications" :key="index"
 				class="bg-light p-4 rounded-lg border border-light">
-				<h3 class="font-semibold text-dark">{{ cert.name[currentLanguage] }}</h3>
-				<p class="text-sm text-text mb-1">{{ cert.issuer[currentLanguage] }}</p>
-				<p class="text-xs text-text opacity-70">{{ cert.date[currentLanguage] }}</p>
+				<h3 class="font-semibold text-dark">{{ cert.name }}</h3>
+				<p class="text-sm text-text mb-1">{{ cert.issuer }}</p>
+				<p class="text-xs text-text opacity-70">{{ cert.date }}</p>
 			</div>
 		</div>
 	</section>
@@ -19,6 +19,6 @@
 <script setup>
 defineProps({
     certifications: { type: Array, default: () => [] },
-    currentLanguage: { type: String, default: () => '' },
+    
 })
 </script>

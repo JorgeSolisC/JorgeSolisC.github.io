@@ -10,15 +10,15 @@
 				<div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
 					<div class="flex items-center">
 						<i class="fas fa-envelope mr-2 text-primary" />
-						<span>{{ contacts.email }}</span>
+						<span>jorgearmando.soliscruz@gmail.com</span>
 					</div>
 					<div class="flex items-center">
 						<i class="fas fa-phone mr-2 text-primary" />
-						<span>{{ contacts.phone }}</span>
+						<span>+52 (346) 100-4832</span>
 					</div>
 					<div class="flex items-center">
 						<i class="fas fa-map-marker-alt mr-2 text-primary" />
-						<span>{{ contacts.location }}</span>
+						<span>Aguascalientes, Ags, México.</span>
 					</div>
 				</div>
 			</div>
@@ -29,6 +29,5 @@
 <script setup>
 defineProps({
     position: { type: String, default: () => '' },
-    contacts: { type: Object, default: () => null },
 })
 </script>

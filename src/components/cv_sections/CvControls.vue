@@ -5,13 +5,13 @@
 				:class="{'bg-primary text-white': currentLanguage === 'en'}" 
 				class="px-4 py-1 rounded-full text-sm font-medium transition-colors duration-200"
 				@click="emit('change-language', 'en')">
-				English
+				{{ $t('lang.english') }}
 			</button>
 			<button 
 				:class="{'bg-primary text-white': currentLanguage === 'es'}" 
 				class="px-4 py-1 rounded-full text-sm font-medium transition-colors duration-200"
 				@click="emit('change-language', 'es')">
-				Español
+				{{ $t('lang.spanish') }}
 			</button>
 		</div>
 		<button class="flex items-center gap-2 bg-secondary hover:bg-dark text-white px-4 py-2 rounded-lg shadow-sm" @click="printCV">

@@ -8,7 +8,7 @@
 			<div class="flex items-center">
 				<div
 					class="w-10 h-10 rounded-full bg-primary bg-opacity-10 text-primary flex items-center justify-center mr-3">
-					<i class="fab fa-linkedin-in" />
+					<i class="pi pi-linkedin text-white" />
 				</div>
 				<a :href="'https://' + socialLinks.linkedin" target="_blank" class="text-dark hover:text-primary">{{
 					socialLinks.linkedin }}</a>
@@ -16,7 +16,7 @@
 			<div class="flex items-center">
 				<div
 					class="w-10 h-10 rounded-full bg-primary bg-opacity-10 text-primary flex items-center justify-center mr-3">
-					<i class="fab fa-github" />
+					<i class="pi pi-github text-white" />
 				</div>
 				<a :href="'https://' + socialLinks.github" target="_blank" class="text-dark hover:text-primary">{{
 					socialLinks.github }}</a>

@@ -1,31 +1,168 @@
 {
-  "name": "Alex Johnson",
-  "position": "Senior Full-Stack Developer",
-  "contacts": {
-    "email": "alex.johnson@example.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "San Francisco, USA"
-  },
-  "aboutText": "Innovative software engineer with 7+ years of experience...",
-  "experiences": [
-    {
-      "title": "Senior Full-Stack Developer",
-      "company": "CloudTech Solutions",
-      "period": "Jan 2020 - Present",
-      "description": "Lead developer for enterprise SaaS platform...",
-      "skills": ["Vue 3", "Node.js", "AWS"]
-    }
-  ],
-  "education": [
-    {
-      "degree": "Master in Software Engineering",
-      "institution": "Stanford University",
-      "period": "2015 - 2017",
-      "description": "Specialized in Distributed Systems..."
-    }
-  ],
-  "socialLinks": {
-    "linkedin": "",
-    "github": ""
-  }
+    "name": "Alex Johnson",
+    "position": "Desarrollador Full-Stack",
+    "aboutText": "Soy una persona comprometida con sólidos principios éticos y gran capacidad de adaptación a nuevas tecnologías. Mi enfoque disciplinado y mi pasión por el desarrollo me permiten ofrecer soluciones innovadoras, garantizando el cumplimiento de objetivos tanto personales como organizacionales. Destaco en el área de programación, con habilidades técnicas complementadas por una mentalidad analítica y resolutiva.",
+    "experiences": [
+        {
+            "title": "Mecánico general",
+            "location": "Teocaltiche, Jalisco. México",
+            "company": "Transmisiones Díaz",
+            "period": "Agosto 2014 - Diciembre 2014",
+            "description": "Mantenimiento correctivo y preventivo a vehículos de combustión interna.",
+            "skills": [
+                "Mantenimiento automotriz",
+                "Diagnóstico mecánico",
+                "Reparación de motores"
+            ]
+        },
+        {
+            "title": "Desarrollador FullStack",
+            "location": "Aguascalientes, Ags. México",
+            "company": "CCEO – Software Development",
+            "period": "Agosto 2018 - Actualmente",
+            "description": "Desarrollo de plataformas web empresariales (ERP, Ecommerce) utilizando Laravel como framework principal. Participación en el ciclo completo de desarrollo, desde análisis de requerimientos hasta implementación en producción. Implementación de soluciones técnicas siguiendo estándares de calidad y arquitectura MVC.",
+            "responsibilities": [
+                "Desarrollo de backend con PHP/Laravel y bases de datos MySQL",
+                "Creación de interfaces frontend con Vue",
+                "Diseño e implementación de APIs RESTful",
+                "Participación en equipos Scrum (planificación, sprints, retrospectivas)",
+                "Control de versiones con Git/GitHub",
+                "Resolución de bugs y optimización de rendimiento",
+                "Implementación de pruebas automatizadas"
+            ],
+            "skills": [
+                "Laravel",
+                "Vue",
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "Bootstrap",
+                "CSS",
+                "HTML",
+                "SCRUM",
+                "Arquitectura MVC",
+                "Pruebas automatizadas",
+                "Desarrollo de APIs",
+                "Git/GitHub",
+                "Resolución de bugs"
+            ]
+        },
+        {
+            "title": "Colaborador",
+            "location": "Aguascalientes, Ags. México",
+            "company": "MyShell Software Lab",
+            "period": "Marzo 2020 - Actualmente",
+            "description": "Participación como colaborador en MyShell, implementando nuevas funcionalidades en paquetes existentes de npm para Vue.js y desarrollando herramientas personalizadas que optimizan el flujo de trabajo de los desarrolladores.",
+            "skills": [
+                "NPM",
+                "Vue"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachillerato Técnico",
+            "institution": "CBTIS 247, Teocaltiche",
+            "period": "2011 - 2014",
+            "description": "Técnico en Mantenimiento Automotriz."
+        },
+        {
+            "degree": "Certificación en Inglés",
+            "institution": "English For All",
+            "period": "2014 - 2017",
+            "description": "Técnico en Inglés."
+        },
+        {
+            "degree": "Ingeniería en Sistemas Computacionales",
+            "institution": "Instituto Tecnológico Superior de Nochistlán",
+            "period": "2014 - 2018",
+            "description": "Formación en desarrollo de software, redes y bases de datos."
+        }
+    ],
+    "socialLinks": {
+        "linkedin": "linkedin.com/in/jorge-solisc",
+        "github": "github.com/JorgeSolisC"
+    },
+    "skills": [
+        {
+            "category": "Programming Languages",
+            "items": [
+                "JavaScript",
+                "PHP",
+                "Dart",
+                "C#",
+                "Bash (Unix shell)"
+            ]
+        },
+        {
+            "category": "Backend Web Frameworks",
+            "items": [
+                "Laravel",
+                "CodeIgniter"
+            ]
+        },
+        {
+            "category": "Frontend Web Frameworks",
+            "items": [
+                "Vue.js",
+                "Angular",
+                "React"
+            ]
+        },
+        {
+            "category": "Desktop Applications",
+            "items": [
+                "Electron",
+                ".NET"
+            ]
+        },
+        {
+            "category": "Mobile Applications",
+            "items": [
+                "Android Native Development",
+                "Nativescript",
+                "Ionic",
+                "Flutter"
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        {
+            "category": "CSS Frameworks",
+            "items": [
+                "Tailwind",
+                "Bootstrap"
+            ]
+        },
+        {
+            "category": "Version Control",
+            "items": [
+                "Git"
+            ]
+        },
+        {
+            "category": "Server Administration",
+            "items": [
+                "Linux (Debian, Arch)",
+                "Windows Server"
+            ]
+        },
+        {
+            "category": "Other Technologies",
+            "items": [
+                "GitHub Actions",
+                "Node.js",
+                "Vite",
+                "ESLint",
+                "Datadog Cloud Monitoring",
+                "Windows Subsystem for Linux"
+            ]
+        }
+    ]
 }

@@ -7,8 +7,8 @@
 		<div class="space-y-3">
 			<div v-for="(lang, index) in languages" :key="index">
 				<div class="flex justify-between mb-1">
-					<span class="font-medium text-dark">{{ lang.name[currentLanguage] }}</span>
-					<span class="text-sm text-text">{{ lang.level[currentLanguage] }}</span>
+					<span class="font-medium text-dark">{{ lang.name }}</span>
+					<span class="text-sm text-text">{{ lang.level }}</span>
 				</div>
 				<div class="w-full bg-gray-200 skill-bar">
 					<div class="bg-primary skill-bar" :style="{ width: lang.proficiency + '%' }" />
@@ -21,6 +21,6 @@
 <script setup>
 defineProps({
     languages: { type: Array, default: () => [] },
-    currentLanguage: { type: String, default: () => '' },
+    
 })
 </script>

@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<h2 class="text-2xl font-bold text-secondary mb-4 flex items-center">
-			<i class="fas fa-briefcase mr-3 text-primary" />
+			<i class="pi pi-briefcase mr-3 text-primary" />
 			<span>{{ $t('experience') }}</span>
 		</h2>
 		<div class="space-y-6">
@@ -11,18 +11,34 @@
 					<div class="w-2 h-2 rounded-full bg-white" />
 				</div>
 				<div class="bg-light p-6 rounded-lg border border-light">
-					<h3 class="text-xl font-semibold text-dark">{{ exp.title[currentLanguage] }}</h3>
+					<h3 class="text-xl font-semibold text-dark">
+						{{ exp.title }} <span class="text-sm text-info">({{
+							exp.location }})</span>
+					</h3>
 					<div class="flex flex-wrap items-center text-text text-sm mb-2">
-						<span class="mr-4"><i class="fas fa-building mr-1 text-primary" /> {{
-							exp.company[currentLanguage] }}</span>
-						<span><i class="fas fa-calendar-alt mr-1 text-primary" /> {{ exp.period[currentLanguage]
-						}}</span>
+						<span class="mr-4">
+							<i class="pi pi-building mr-1 text-primary" />
+							{{ exp.company }}
+						</span>
+						<span>
+							<i class="pi pi-calendar mr-1 text-primary" /> {{ exp.period }}
+						</span>
 					</div>
-					<p class="text-text mb-3">{{ exp.description[currentLanguage] }}</p>
+					<p class="text-justify text-sm mb-3">{{ exp.description }}</p>
+
+					<div v-if="exp.responsibilities" class="print:text-xs mb-3">
+						<h4 class="font-medium text-dark mb-1">{{ $t('responsibilities') }}:</h4>
+						<ul class="list-disc pl-5 space-y-1 text-xs">
+							<li v-for="(responsibility, respIndex) in exp.responsibilities" :key="respIndex">
+								{{ responsibility }}
+							</li>
+						</ul>
+					</div>
+
 					<div class="flex flex-wrap gap-2">
 						<span
 							v-for="(skill, skillIndex) in exp.skills" :key="skillIndex"
-							class="bg-primary bg-opacity-10 text-primary text-xs px-2 py-1 rounded">
+							class="bg-primary bg-opacity-10 text-light text-xs px-2 py-1 rounded">
 							{{ skill }}
 						</span>
 					</div>
@@ -35,6 +51,5 @@
 <script setup>
 defineProps({
     experiences: { type: Array, default: () => [] },
-    currentLanguage: { type: String, default: () => '' },
 })
 </script>
