@@ -1,18 +1,20 @@
+import '@/css/style.css'
+import '@/css/cv.css'
 import {createApp} from 'vue'
-import './style.css'
 import App from './App.vue'
 import {createI18n} from "vue3-i18n";
-import en from './lang/en.json'
-import es from './lang/es.json'
+import enUI from './lang/ui/en.json'
+import esUI from './lang/ui/es.json'
 
 const i18n = createI18n({
     locale: localStorage.locale ?? 'en',
+    fallbackLocale: 'es',
     legacy: false,
     globalInjection: true,
     messages: {
-        en,
-        es
-    }
+    en: enUI,
+    es: esUI
+  }
 });
 const app = createApp(App);
 app.use(i18n);

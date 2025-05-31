@@ -1,0 +1,31 @@
+{
+  "name": "Alex Johnson",
+  "position": "Senior Full-Stack Developer",
+  "contacts": {
+    "email": "alex.johnson@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, USA"
+  },
+  "aboutText": "Innovative software engineer with 7+ years of experience...",
+  "experiences": [
+    {
+      "title": "Senior Full-Stack Developer",
+      "company": "CloudTech Solutions",
+      "period": "Jan 2020 - Present",
+      "description": "Lead developer for enterprise SaaS platform...",
+      "skills": ["Vue 3", "Node.js", "AWS"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master in Software Engineering",
+      "institution": "Stanford University",
+      "period": "2015 - 2017",
+      "description": "Specialized in Distributed Systems..."
+    }
+  ],
+  "socialLinks": {
+    "linkedin": "",
+    "github": ""
+  }
+}
