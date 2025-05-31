@@ -1,18 +1,27 @@
 {
-  "name": "js.github.io",
+  "name": "js-cv",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ./src --ext js,vue --max-warnings=0"
   },
   "dependencies": {
+    "print-js": "^1.6.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.3",
-    "vite": "^6.3.5"
+    "@vitejs/plugin-vue": "^4.2.3",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.48.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue3-i18n": "^1.1.5"
   }
 }
