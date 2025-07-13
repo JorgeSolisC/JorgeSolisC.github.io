@@ -15,7 +15,7 @@
 					<div class="flex flex-wrap items-center text-text text-sm mb-2">
 						<span class="mr-4"><i class="pi pi-book mr-1 text-primary" /> {{
 							edu.institution }}</span>
-						<span><i class="fas fa-calendar-alt mr-1 text-primary" /> {{ edu.period
+						<span><i class="pi pi-calendar mr-1 text-primary" /> {{ edu.period
 						}}</span>
 					</div>
 					<p class="text-text">{{ edu.description }}</p>

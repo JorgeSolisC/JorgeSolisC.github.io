@@ -14,21 +14,20 @@
 				{{ $t('lang.spanish') }}
 			</button>
 		</div>
-		<button class="flex items-center gap-2 bg-secondary hover:bg-dark text-white px-4 py-2 rounded-lg shadow-sm" @click="printCV">
-			<i class="fas fa-print" />
+		<button 
+			class="flex items-center gap-2 bg-secondary hover:bg-dark text-white px-4 py-2 rounded-lg shadow-sm" 
+			@click="emit('open-pdf-modal')">
+			<i class="pi pi-print" />
 			<span>{{ $t('print') }}</span>
 		</button>
 	</div>
 </template>
 
 <script setup>
-const emit = defineEmits(['change-language'])
+const emit = defineEmits(['change-language', 'open-pdf-modal'])
 
 defineProps({
   currentLanguage: { type: String, default: () => 'es' },
 })
 
-const printCV = () => {
-  window.print()
-}
 </script>

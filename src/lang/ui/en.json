@@ -1,15 +1,21 @@
 {
-  "print": "Print CV",
+  "preview_cv": "Preview CV",
+  "print": "Print",
+  "download": "Download",
   "about": "About Me",
   "experience": "Work Experience",
   "education": "Education",
   "responsibilities": "Responsibilities",
   "skills": "Technical Skills",
   "languages": "Languages",
-  "certifications": "Certifications",
+  "certifications": "Certifications/Courses",
   "contact": "Contact",
   "lang": {
     "english" : "English",
     "spanish" : "Spanish"
-  }
+  },
+  "summary": "Summary",
+  "no_languages_specified": "No languages specified.",
+  "print_cv": "Print CV",
+  "download_pdf": "Download PDF"
 }

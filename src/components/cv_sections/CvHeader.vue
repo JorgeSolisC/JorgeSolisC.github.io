@@ -9,15 +9,15 @@
 				<p class="text-xl opacity-90 mb-4">{{ position }}</p>
 				<div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
 					<div class="flex items-center">
-						<i class="fas fa-envelope mr-2 text-primary" />
+						<i class="pi pi-envelope mr-2 text-primary" />
 						<span>jorgearmando.soliscruz@gmail.com</span>
 					</div>
 					<div class="flex items-center">
-						<i class="fas fa-phone mr-2 text-primary" />
+						<i class="pi pi-phone mr-2 text-primary" />
 						<span>+52 (346) 100-4832</span>
 					</div>
 					<div class="flex items-center">
-						<i class="fas fa-map-marker-alt mr-2 text-primary" />
+						<i class="pi pi-map mr-2 text-primary" />
 						<span>Aguascalientes, Ags, México.</span>
 					</div>
 				</div>

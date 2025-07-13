@@ -6,13 +6,13 @@
 		</h2>
 		<div class="space-y-4">
 			<div v-for="category in skills" :key="category.category">
-				<h3 class="text-sm font-semibold mt-6 mb-3 text-dark">{{ category.category }}</h3>
-				<div v-for="(skill, index) in category.items" :key="index" class="mb-4">
-					<div class="flex justify-between mb-1 text-xs">
+				<h3 class="text-sm font-semibold mt-3 mb-1 text-dark">{{ category.category }}</h3>
+				<div v-for="(skill, index) in category.items" :key="index" class="">
+					<div class="flex justify-between ml-2 mb-1 text-xs">
 						<span class="font-medium text-dark">{{ skill.name || skill }}</span>
 						<span v-if="skill.level" class="text-text">{{ skill.level || 80 }}%</span>
 					</div>
-					<div v-if="skill.level" class="w-full bg-gray-200 rounded-full h-2.5">
+					<div v-if="skill.level" class="w-full ml-1  bg-gray-200 rounded-full h-2">
 						<div class="bg-primary h-2.5 rounded-full" :style="{ width: (skill.level || 80) + '%' }" />
 					</div>
 				</div>

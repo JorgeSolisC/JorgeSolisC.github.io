@@ -1,15 +1,21 @@
 {
-  "print": "Imprimir CV",
+  "preview_cv": "Previsualizar CV",
+  "print": "Imprimir",
+  "download": "Descargar",
   "about": "Sobre Mí",
   "experience": "Experiencia Laboral",
   "education": "Educación",
   "responsibilities": "Responsabilidades",
   "skills": "Habilidades Técnicas",
   "languages": "Idiomas",
-  "certifications": "Certificaciones",
+  "certifications": "Certificaciones/Cursos",
   "contact": "Contacto",
   "lang": {
     "english" : "Ingles",
     "spanish" : "Español"
-  }
+  },
+  "summary": "Resumen",
+  "no_languages_specified": "No se han especificado idiomas.",
+  "print_cv": "Imprimir CV",
+  "download_pdf": "Descargar PDF"
 }

@@ -1,85 +1,148 @@
 {
-    "name": "Alex Johnson",
-    "position": "Full-Stack Developer",
-    "aboutText": "I'm a dedicated person with strong ethics and adaptability to new technologies. Through disciplined work and passion for development, I create innovative solutions that meet both personal and organizational objectives. My programming skills are enhanced by analytical thinking and problem-solving abilities.",
-    "experiences": [
-        {
-            "title": "General Mechanic",
-            "location": "Teocaltiche, Jalisco. México",
-            "company": "Transmisiones Díaz",
-            "period": "August 2014 - December 2014",
-            "description": "Corrective and preventive maintenance for internal combustion vehicles.",
-            "skills": [
-                "Automotive maintenance",
-                "Mechanical diagnostics",
-                "Engine repair"
-            ]
-        },
-        {
-            "title": "FullStack Developer",
-            "location": "Aguascalientes, Ags. México",
-            "company": "CCEO – Software Development",
-            "period": "August 2018 - Present",
-            "description": "Development of enterprise web platforms (ERP, Ecommerce) using Laravel as main framework. Involved in the complete development cycle, from requirements analysis to production implementation. Delivered technical solutions following quality standards and MVC architecture.",
-            "responsibilities": [
-                "Backend development with PHP/Laravel and MySQL databases",
-                "Frontend interfaces creation with Vue.js",
-                "Design and implementation of RESTful APIs",
-                "Active participation in Scrum teams (planning, sprints, retrospectives)",
-                "Version control with Git/GitHub",
-                "Bug resolution and performance optimization",
-                "Implementation of automated testing"
-            ],
-            "skills": [
-                "Laravel",
-                "Vue",
-                "PHP",
-                "MySQL",
-                "JavaScript",
-                "Bootstrap",
-                "CSS/HTML",
-                "SCRUM",
-                "MVC Architecture",
-                "Automated Testing",
-                "API Development",
-                "Version Control (Git)",
-                "Debugging"
-            ]
-        },
-        {
-            "title": "Collaborator",
-            "location": "Aguascalientes, Ags. Mexico",
-            "company": "MyShell Software Lab",
-            "period": "March 2020 - Present",
-            "description": "Collaborated at MyShell by adding new features to existing npm packages for Vue.js and building custom tools to streamline developers' workflows.",
-            "skills": [
-                "NPM",
-                "Vue"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "degree": "Technical High School Diploma",
-            "institution": "CBTIS 247, Teocaltiche",
-            "period": "2011 - 2014",
-            "description": "Automotive Maintenance Technician."
-        },
-        {
-            "degree": "English Certification",
-            "institution": "English For All",
-            "period": "2014 - 2017",
-            "description": "English Technician."
-        },
-        {
-            "degree": "Bachelor's in Computer Systems Engineering",
-            "institution": "Nochistlán Higher Technological Institute",
-            "period": "2014 - 2018",
-            "description": "Training in software development, networking, and databases."
-        }
-    ],
-    "socialLinks": {
-        "linkedin": "linkedin.com/in/jorge-solisc",
-        "github": "github.com/JorgeSolisC"
+  "name": "Jorge Armando Solis Cruz",
+  "position": "Full-Stack Developer",
+  "email": "jorgearmando.soliscruz@gmail.com",
+  "phone": "346-100-48-32",
+  "location": "Aguascalientes, Ags.",
+  "aboutText": "I am a committed person with strong ethical principles and a great ability to adapt to new technologies. My disciplined approach and passion for development allow me to offer innovative solutions, ensuring the achievement of both personal and organizational goals. I stand out in programming with technical skills complemented by an analytical and problem-solving mindset.",
+  "experiences": [
+    {
+      "title": "General Mechanic",
+      "location": "Teocaltiche, Jalisco.",
+      "company": "Transmisiones Díaz",
+      "period": "August 2014 - December 2014",
+      "description": "Corrective and preventive maintenance for internal combustion vehicles.",
+      "skills": [
+        "Automotive maintenance",
+        "Mechanical diagnostics",
+        "Engine repair"
+      ]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "location": "Aguascalientes, Ags.",
+      "company": "CCEO – Software Development",
+      "period": "August 2018 - Present",
+      "description": "Development of enterprise web platforms (ERP, Ecommerce) using Laravel as the main framework. Participation throughout the development cycle, from requirements analysis to production deployment. Implementation of technical solutions following quality standards and MVC architecture.",
+      "responsibilities": [
+        "Backend development with PHP/Laravel and MySQL databases",
+        "Frontend interface creation using Vue",
+        "API RESTful design and implementation",
+        "Participation in Scrum teams (planning, sprints, retrospectives)",
+        "Version control with Git/GitHub",
+        "Bug fixing and performance optimization",
+        "Implementation of automated testing"
+      ],
+      "skills": [
+        "Laravel",
+        "Vue",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Bootstrap",
+        "CSS",
+        "HTML",
+        "SCRUM",
+        "MVC Architecture",
+        "Automated Testing",
+        "API Development",
+        "Git/GitHub",
+        "Bug Resolution"
+      ]
+    },
+    {
+      "title": "Collaborator",
+      "location": "Aguascalientes, Ags.",
+      "company": "MyShell Software Lab",
+      "period": "March 2020 - Present",
+      "description": "Contributor at MyShell, implementing new features in existing npm packages for Vue.js and developing custom tools to streamline developers' workflows.",
+      "skills": ["NPM", "Vue"]
     }
+  ],
+  "education": [
+    {
+      "degree": "Technical High School",
+      "institution": "CBTIS 247, Teocaltiche",
+      "period": "2011 - 2014",
+      "description": "Automotive Maintenance Technician."
+    },
+    {
+      "degree": "English Certification",
+      "institution": "English For All",
+      "period": "2014 - 2017",
+      "description": "Technical English Training."
+    },
+    {
+      "degree": "Bachelor’s in Computer Systems Engineering",
+      "institution": "Technological Institute of Nochistlán",
+      "period": "2014 - 2018",
+      "description": "Training in software development, networks, and databases."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": ["JavaScript", "PHP", "C#"]
+    },
+    {
+      "category": "Backend Web Frameworks",
+      "items": ["Laravel"]
+    },
+    {
+      "category": "Frontend Web Frameworks",
+      "items": ["Vue.js"]
+    },
+    {
+      "category": "Desktop Applications",
+      "items": [".NET"]
+    },
+    {
+      "category": "Mobile Applications",
+      "items": ["Android Studio"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MySQL", "SQLServer"]
+    },
+    {
+      "category": "CSS Frameworks",
+      "items": ["Tailwind", "Bootstrap"]
+    },
+    {
+      "category": "Version Control",
+      "items": ["Git"]
+    },
+    {
+      "category": "Other Technologies",
+      "items": [
+        "Node.js",
+        "Vite",
+        "ESLint"
+      ]
+    }
+  ],
+  "languages": [
+    {"name": "Spanish", "level": "Native"},
+    {"name": "English", "level": "A2"}
+  ],
+  "softSkills": [
+    "Responsibility",
+    "Commitment",
+    "Organization",
+    "Problem solving",
+    "Teamwork"
+  ],
+  "certifications": [
+    { "name": "Microsoft Office Technologies", "date": "June 2013" },
+    { "name": "Campus Party Mexico", "date": "July 2016" },
+    { "name": "Windows Phone 8 Course (ITESO)", "date": "October 2016" },
+    { "name": "Zacatecas Hackathon", "date": "June 2017" },
+    { "name": "CIMPS Congress", "date": "October 2017" },
+    { "name": "Selenium Workshop", "date": "May 2018" }
+  ],
+  "hobbies": ["Soccer", "Music", "Drumming", "Video games"],
+  "socialLinks": {
+    "linkedin": "linkedin.com/in/jorge-solisc",
+    "github": "github.com/JorgeSolisC"
+  }
 }

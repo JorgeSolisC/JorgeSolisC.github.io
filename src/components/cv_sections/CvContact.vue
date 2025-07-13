@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<h2 class="text-2xl font-bold text-secondary mb-4 flex items-center">
-			<i class="fas fa-paper-plane mr-3 text-primary" />
+			<i class="pi pi-bookmark mr-3 text-primary" />
 			<span>{{ $t('contact') }}</span>
 		</h2>
 		<div class="space-y-3">
