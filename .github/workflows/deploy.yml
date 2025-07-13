@@ -1,0 +1,36 @@
+name: Deploy CV to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Dispara el workflow cada vez que se haga push a la rama 
+  workflow_dispatch: # Permite ejecutar el workflow manualmente desde la interfaz de GitHub
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Ejecuta el trabajo en una máquina virtual Linux
+
+    steps:
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4 # Clonar tu repositorio
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4 # Configurar Node.js
+        with:
+          node-version: "20" # Versión de Node.js q(ej. '18')
+          cache: "npm" # Habilita el caché de dependencias para 'npm'
+
+      - name: Install Dependencies
+        run: npm install # Instala las dependencias del proyecto
+
+      - name: Build Vue Application
+        run: npm run build # Ejecutar el comando de construcción de tu aplicación Vue
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # Esta acción es especializada para desplegar en GitHub Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Token de GitHub para autenticación (lo maneja GitHub automáticamente)
+          publish_dir: ./dist # La carpeta de salida de tu build de Vue (por defecto 'dist')
+          publish_branch:
+            gh-pages # La rama donde GitHub Pages buscará los archivos para servir
+            # Esta rama se creará automáticamente si no existe.
