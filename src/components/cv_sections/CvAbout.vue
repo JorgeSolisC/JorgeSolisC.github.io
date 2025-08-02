@@ -5,13 +5,13 @@
 			<span>{{ $t('about') }}</span>
 		</h2>
 		<p class="text-text leading-relaxed text-justify">
-			{{ aboutText }}
+			{{ summary }}
 		</p>
 	</section>
 </template>
 
 <script setup>
 defineProps({
-    aboutText: { type: String, default: () => '' },
+    summary: { type: String, default: () => '' },
 })
 </script>

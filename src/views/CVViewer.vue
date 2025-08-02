@@ -3,12 +3,12 @@
 		v-if="isVisible"
 		class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 no-print-overlay">
 		<div class="bg-white rounded-lg shadow-2xl relative overflow-hidden flex flex-col max-w-4xl w-full h-full max-h-[90vh]">
-			<!-- Header -->
-			<div class="modal-header p-4 pb-2 border-b border-gray-200 flex justify-between items-center no-print">
-				<h2 class="text-xl font-bold text-gray-800">{{ $t('download') }} / {{ $t('print') }}</h2>
+			<!-- Modal Header -->
+			<div class="modal-header p-4 border-b border-gray-200 flex justify-between items-center no-print">
+				<h2 class="text-xl font-bold ">{{ $t('download') }} / {{ $t('print') }}</h2>
 				<button
-					class="text-gray-500 hover:text-gray-700 text-3xl font-bold z-10"
-					aria-label="Cerrar modal"
+					class=" hover:text-cyan-300 text-3xl font-bold z-10"
+					aria-label="Close modal"
 					@click="$emit('close-pdf')">
 					&times;
 				</button>
@@ -17,81 +17,93 @@
 			<!-- CV Content -->
 			<div
 				ref="cvContentForPdf"
-				class="flex-grow overflow-y-auto p-6 md:p-8 custom-scrollbar cv-harvard-style text-black font-serif">
-				<!-- HEADER -->
-				<section class="cv-harvard-header mb-6 pb-2 border-b border-gray-400">
-					<h1 class="text-3xl font-bold text-gray-800 uppercase text-center mb-1">{{ profileData.name }}</h1>
-					<h2 class="text-xl font-semibold text-center text-gray-700 mb-2">{{ profileData.position }}</h2>
-					<div class="text-sm text-gray-600 text-center flex flex-wrap justify-center gap-x-4">
-						<span v-if="profileData.socialLinks.linkedin" class="flex items-center">
-							<i class="fab fa-linkedin mr-1" /> {{ profileData.socialLinks.linkedin }}
-						</span>
-						<span v-if="profileData.socialLinks.github" class="flex items-center">
-							<i class="fab fa-github mr-1" /> {{ profileData.socialLinks.github }}
-						</span>
-					</div>
-				</section>
-
-				<!-- SUMMARY -->
-				<section class="cv-section mb-6">
-					<h3 class="cv-section-title">{{ $t('summary') }}</h3>
-					<p class="text-sm leading-relaxed">{{ profileData.aboutText }}</p>
-				</section>
-
-				<!-- EDUCATION -->
-				<section class="cv-section mb-6">
-					<h3 class="cv-section-title">{{ $t('education') }}</h3>
-					<div v-for="(edu, index) in profileData.education" :key="index" class="mb-4 last:mb-0">
-						<h4 class="text-md font-bold">{{ edu.degree }}</h4>
-						<p class="text-sm italic">{{ edu.institution }} | {{ edu.period }}</p>
-						<p v-if="edu.description" class="text-sm mt-1">{{ edu.description }}</p>
-					</div>
-				</section>
-
-				<!-- EXPERIENCE -->
-				<section class="cv-section mb-6">
-					<h3 class="cv-section-title">{{ $t('experience') }}</h3>
-					<div v-for="(exp, index) in profileData.experiences" :key="index" class="mb-4 last:mb-0">
-						<h4 class="text-md font-bold">{{ exp.title }}</h4>
-						<p class="text-sm italic">{{ exp.company }} - {{ exp.location }} | {{ exp.period }}</p>
-						<ul class="list-disc pl-5 text-sm mt-1">
-							<li v-for="(resp, i) in exp.responsibilities || []" :key="i">{{ resp }}</li>
-						</ul>
-						<p v-if="exp.description" class="text-sm mt-1">{{ exp.description }}</p>
-					</div>
-				</section>
-
-				<!-- SKILLS -->
-				<section class="cv-section mb-6">
-					<h3 class="cv-section-title">{{ $t('skills') }}</h3>
-					<div v-for="(category, index) in profileData.skills" :key="index" class="mb-2 last:mb-0">
-						<h4 class="text-sm font-semibold mb-1">{{ category.category }}:</h4>
-						<p class="text-sm">{{ category.items.join(', ') }}</p>
-					</div>
-				</section>
-
-				<!-- LANGUAGES -->
-				<section class="cv-section mb-6">
-					<h3 class="cv-section-title">{{ $t('languages') }}</h3>
-					<div v-if="profileData.languages?.length" class="text-sm">
-						<div v-for="(lang, index) in profileData.languages" :key="index" class="mb-2 last:mb-0">
-							<h4 class="text-sm font-semibold mb-1">{{ lang.name }} -  <span class="font-medium">{{ lang.level }}</span></h4>
+				class=" overflow-y-auto  custom-scrollbar">
+				<div
+					class="flex-grow  p-6 md:p-8 cv-harvard-style text-black font-serif">
+					<!-- HEADER -->
+					<section class="cv-harvard-header mb-6 pb-2 border-b border-gray-400">
+						<h1 class="text-3xl font-bold text-gray-800 uppercase text-center mb-1">{{ profileData.name }}</h1>
+						<h2 class="text-xl font-semibold text-center text-gray-700 mb-2">{{ profileData.position }}</h2>
+						<div class="text-sm text-gray-600 text-center flex flex-wrap justify-center gap-x-4">
+							<span v-if="profileData.phone" class="flex items-center">
+								{{ profileData.phone }}
+							</span>
+							<span v-if="profileData.email" class="flex items-center">
+								{{ profileData.email }}
+							</span>
+							<span v-if="profileData.socialLinks.linkedin" class="flex items-center">
+								<a :href="profileData.socialLinks.linkedin" target="_blank" rel="noopener noreferrer">
+									<i class="fab fa-linkedin mr-1" /> LinkedIn
+								</a>
+							</span>
+							<span v-if="profileData.socialLinks.github" class="flex items-center">
+								<a :href="profileData.socialLinks.github" target="_blank" rel="noopener noreferrer">
+									<i class="fab fa-github mr-1" /> GitHub
+								</a>
+							</span>
 						</div>
-					</div>
-					<p v-else class="text-sm">
-						{{ $t('no_languages_specified') }}
-					</p>
-				</section>
+					</section>
 
-				<!-- CERTIFICATIONS -->
-				<section v-if="profileData.certifications?.length" class="cv-section mb-6">
-					<h3 class="cv-section-title">{{ $t('certifications') }}</h3>
-					<div v-for="(cert, index) in profileData.certifications" :key="index" class="mb-4 last:mb-0">
-						<h4 class="text-md font-bold">{{ cert.name }}</h4>
-						<p class="text-sm italic">{{ cert.issuer }} | {{ cert.date }}</p>
-						<p v-if="cert.description" class="text-sm mt-1">{{ cert.description }}</p>
-					</div>
-				</section>
+					<!-- PROFESSIONAL SUMMARY -->
+					<section class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('summary') }}</h3>
+						<p class="text-sm leading-relaxed">{{ profileData.summary }}</p>
+					</section>
+
+					<!-- PROFESSIONAL EXPERIENCE -->
+					<section class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('experience') }}</h3>
+						<div v-for="(exp, index) in profileData.experiences" :key="index" class="mb-4 last:mb-0">
+							<h4 class="text-md font-bold">{{ exp.title }} | {{ exp.company }} | {{ exp.location }}</h4>
+							<p class="text-sm italic">{{ exp.period }}</p>
+							<ul class="list-disc pl-5 text-sm mt-1">
+								<li v-for="(resp, i) in exp.responsibilities || []" :key="i">{{ resp }}</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- TECHNICAL SKILLS -->
+					<section class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('skills') }}</h3>
+						<div class="skills-grid">
+							<div v-for="(category, index) in profileData.skills" :key="index" class="mb-2">
+								<h4 class="text-sm font-semibold mb-1">{{ category.category }}:</h4>
+								<p class="text-sm">{{ category.items.join(', ') }}</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- EDUCATION -->
+					<section class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('education') }}</h3>
+						<div v-for="(edu, index) in profileData.education" :key="index" class="mb-4 last:mb-0">
+							<h4 class="text-md font-bold">{{ edu.degree }}</h4>
+							<p class="text-sm italic">{{ edu.institution }} | {{ edu.period }}</p>
+						</div>
+					</section>
+
+					<!-- LANGUAGES -->
+					<section class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('languages') }}</h3>
+						<div v-if="profileData.languages?.length" class="text-sm">
+							<div v-for="(lang, index) in profileData.languages" :key="index" class="mb-2 last:mb-0">
+								<h4 class="text-sm font-semibold mb-1">{{ lang.name }} - <span class="font-medium">{{ lang.level }}</span></h4>
+							</div>
+						</div>
+						<p v-else class="text-sm">
+							{{ $t('no_languages_specified') }}
+						</p>
+					</section>
+
+					<!-- PROFESSIONAL DEVELOPMENT & CERTIFICATIONS -->
+					<section v-if="profileData.developmentAndCourses?.length" class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('certifications') }}</h3>
+						<div v-for="(item, index) in profileData.developmentAndCourses" :key="index" class="mb-4 last:mb-0">
+							<h4 class="text-md font-bold">{{ item.name }}</h4>
+							<p v-if="item.period" class="text-sm italic">{{ item.period }}</p>
+						</div>
+					</section>
+				</div>
 			</div>
 
 			<!-- Footer Actions -->
@@ -177,12 +189,13 @@ const printCV = async () => {
       win.print()
     })
   } else {
-    console.warn("No se pudo abrir la ventana para imprimir.")
+    console.warn('Could not open the window to print.')
   }
 }
 </script>
 
 <style scoped>
+/* General styles */
 body {
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
@@ -190,9 +203,11 @@ body {
 }
 
 .modal-header {
-  background-color: #f8f8f8;
+  background-color: var(--color-secondary);
+  color: white !important;
 }
 
+/* CV styles */
 .cv-harvard-style {
   max-width: 8.5in;
   margin: 0 auto;
@@ -202,6 +217,7 @@ body {
   background: white;
 }
 
+/* Header */
 .cv-harvard-header h1 {
   font-size: 2.25rem;
   font-weight: bold;
@@ -225,6 +241,7 @@ body {
   white-space: nowrap;
 }
 
+/* Sections */
 .cv-section-title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -245,12 +262,32 @@ body {
 .cv-section ul {
   font-size: 0.9rem;
   color: #444;
+  text-align: justify;
 }
 
 .cv-section li {
   margin-bottom: 0.25rem;
 }
 
+/* Skills in two columns */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .skills-grid > div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Scrollbar styles */
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
 }
@@ -266,6 +303,8 @@ body {
   background: #999;
 }
 
+
+/* Print styles */
 @media print {
   .no-print {
     display: none !important;

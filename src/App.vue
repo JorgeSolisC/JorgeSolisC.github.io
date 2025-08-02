@@ -12,7 +12,7 @@
 
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-10">
 					<div class="lg:col-span-2 space-y-8">
-						<CvAbout :aboutText="profileData.aboutText" />
+						<CvAbout :summary="profileData.summary" />
 						<CvExperience :experiences="profileData.experiences" :currentLanguage="currentLanguage" />
 						<CvEducation :education="profileData.education" :currentLanguage="currentLanguage" />
 					</div>

@@ -4,7 +4,7 @@
   "email": "jorgearmando.soliscruz@gmail.com",
   "phone": "346-100-48-32",
   "location": "Aguascalientes, Ags.",
-  "aboutText": "I am a committed person with strong ethical principles and a great ability to adapt to new technologies. My disciplined approach and passion for development allow me to offer innovative solutions, ensuring the achievement of both personal and organizational goals. I stand out in programming with technical skills complemented by an analytical and problem-solving mindset.",
+  "summary": "Results-oriented Full-Stack Developer with extensive experience in PHP/Laravel. I combine strong ethical values and a disciplined approach with a passion for development and a high ability to adapt to new technologies. My analytical mindset and commitment to code quality and efficiency allow me to deliver innovative solutions that meet both project and organizational goals.",
   "experiences": [
     {
       "title": "General Mechanic",
@@ -51,11 +51,11 @@
       ]
     },
     {
-      "title": "Collaborator",
+      "title": "Developer",
       "location": "Aguascalientes, Ags.",
       "company": "MyShell Software Lab",
       "period": "March 2020 - Present",
-      "description": "Contributor at MyShell, implementing new features in existing npm packages for Vue.js and developing custom tools to streamline developers' workflows.",
+      "description": "Developer at MyShell, implementing new features in existing npm packages for Vue.js and developing custom tools to streamline developers' workflows.",
       "skills": ["NPM", "Vue"]
     }
   ],

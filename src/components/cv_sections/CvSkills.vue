@@ -7,7 +7,9 @@
 		<div class="space-y-4">
 			<div v-for="category in skills" :key="category.category">
 				<h3 class="text-sm font-semibold mt-3 mb-1 text-dark">{{ category.category }}</h3>
-				<div v-for="(skill, index) in category.items" :key="index" class="">
+				<div
+					v-for="(skill, index) in category.items" :key="index" 
+					class="w-1 h-6 rounded-full bg-primary border-2 border-light ml-2">
 					<div class="flex justify-between ml-2 mb-1 text-xs">
 						<span class="font-medium text-dark">{{ skill.name || skill }}</span>
 						<span v-if="skill.level" class="text-text">{{ skill.level || 80 }}%</span>
