@@ -50,10 +50,19 @@
 						<p class="text-sm leading-relaxed">{{ profileData.summary }}</p>
 					</section>
 
+					<!-- EDUCATION -->
+					<section class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('education') }}</h3>
+						<div v-for="(edu, index) in profileData.education" :key="index" class="mb-1 last:mb-0">
+							<h4 class="text-md font-bold">{{ edu.degree }}</h4>
+							<p class="text-sm italic">{{ edu.institution }} | {{ edu.period }}</p>
+						</div>
+					</section>
+
 					<!-- PROFESSIONAL EXPERIENCE -->
 					<section class="cv-section mb-6">
 						<h3 class="cv-section-title">{{ $t('experience') }}</h3>
-						<div v-for="(exp, index) in profileData.experiences" :key="index" class="mb-4 last:mb-0">
+						<div v-for="(exp, index) in profileData.experiences" :key="index" class="mb-1 last:mb-0">
 							<h4 class="text-md font-bold">{{ exp.title }} | {{ exp.company }} | {{ exp.location }}</h4>
 							<p class="text-sm italic">{{ exp.period }}</p>
 							<ul class="list-disc pl-5 text-sm mt-1">
@@ -66,19 +75,18 @@
 					<section class="cv-section mb-6">
 						<h3 class="cv-section-title">{{ $t('skills') }}</h3>
 						<div class="skills-grid">
-							<div v-for="(category, index) in profileData.skills" :key="index" class="mb-2">
+							<div v-for="(category, index) in profileData.skills" :key="index" class="mb-1">
 								<h4 class="text-sm font-semibold mb-1">{{ category.category }}:</h4>
 								<p class="text-sm">{{ category.items.join(', ') }}</p>
 							</div>
 						</div>
 					</section>
 
-					<!-- EDUCATION -->
-					<section class="cv-section mb-6">
-						<h3 class="cv-section-title">{{ $t('education') }}</h3>
-						<div v-for="(edu, index) in profileData.education" :key="index" class="mb-4 last:mb-0">
-							<h4 class="text-md font-bold">{{ edu.degree }}</h4>
-							<p class="text-sm italic">{{ edu.institution }} | {{ edu.period }}</p>
+					<!-- SOFT SKILLS -->
+					<section v-if="profileData.softSkills?.length" class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('soft_skills') }}</h3>
+						<div class="text-sm font-semibold">
+							<p>{{ profileData.softSkills.join(', ') }}</p>
 						</div>
 					</section>
 
@@ -86,7 +94,7 @@
 					<section class="cv-section mb-6">
 						<h3 class="cv-section-title">{{ $t('languages') }}</h3>
 						<div v-if="profileData.languages?.length" class="text-sm">
-							<div v-for="(lang, index) in profileData.languages" :key="index" class="mb-2 last:mb-0">
+							<div v-for="(lang, index) in profileData.languages" :key="index" class="mb-1 last:mb-0">
 								<h4 class="text-sm font-semibold mb-1">{{ lang.name }} - <span class="font-medium">{{ lang.level }}</span></h4>
 							</div>
 						</div>
@@ -96,11 +104,19 @@
 					</section>
 
 					<!-- PROFESSIONAL DEVELOPMENT & CERTIFICATIONS -->
-					<section v-if="profileData.developmentAndCourses?.length" class="cv-section mb-6">
+					<section v-if="profileData.certifications?.length" class="cv-section mb-6">
 						<h3 class="cv-section-title">{{ $t('certifications') }}</h3>
-						<div v-for="(item, index) in profileData.developmentAndCourses" :key="index" class="mb-4 last:mb-0">
+						<div v-for="(item, index) in profileData.certifications" :key="index" class="mb-1 last:mb-0">
 							<h4 class="text-md font-bold">{{ item.name }}</h4>
-							<p v-if="item.period" class="text-sm italic">{{ item.period }}</p>
+							<p v-if="item.date" class="text-sm italic">{{ item.date }}</p>
+						</div>
+					</section>
+                    
+					<!-- HOBBIES -->
+					<section v-if="profileData.hobbies?.length" class="cv-section mb-6">
+						<h3 class="cv-section-title">{{ $t('hobbies') }}</h3>
+						<div class="text-sm font-semibold">
+							<p>{{ profileData.hobbies.join(', ') }}</p>
 						</div>
 					</section>
 				</div>
@@ -273,7 +289,7 @@ body {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
+  gap: 0.2rem;
 }
 
 /* Mobile responsiveness */

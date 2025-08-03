@@ -13,17 +13,18 @@
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-10">
 					<div class="lg:col-span-2 space-y-8">
 						<CvAbout :summary="profileData.summary" />
-						<CvExperience :experiences="profileData.experiences" :currentLanguage="currentLanguage" />
-						<CvEducation :education="profileData.education" :currentLanguage="currentLanguage" />
+						<CvExperience :experiences="profileData.experiences" />
+						<CvEducation :education="profileData.education" />
 					</div>
 
 					<div class="space-y-8">
 						<CvSkills :skills="profileData.skills" />
-						<CvLanguages :languages="profileData.languages" :currentLanguage="currentLanguage" />
+						<CvLanguages :languages="profileData.languages" />
+						<CvSoftSkills :softSkills="profileData.softSkills" />
 						<CvCertifications
-							:certifications="profileData.certifications"
-							:currentLanguage="currentLanguage" />
+							:certifications="profileData.certifications" />
 						<CvContact :socialLinks="profileData.socialLinks" />
+						<CvHobbies :hobbies="profileData.hobbies" />
 					</div>
 				</div>
 			</div>
@@ -43,9 +44,11 @@ import CvAbout from '@/components/cv_sections/CvAbout.vue'
 import CvExperience from '@/components/cv_sections/CvExperience.vue'
 import CvEducation from '@/components/cv_sections/CvEducation.vue'
 import CvSkills from '@/components/cv_sections/CvSkills.vue'
+import CvSoftSkills from '@/components/cv_sections/CvSoftSkills.vue'
 import CvLanguages from '@/components/cv_sections/CvLanguages.vue'
 import CvCertifications from '@/components/cv_sections/CvCertifications.vue'
 import CvContact from '@/components/cv_sections/CvContact.vue'
+import CvHobbies from '@/components/cv_sections/CvHobbies.vue'
 import CVViewer from '@/views/CVViewer.vue' 
 
 import { useI18n } from 'vue3-i18n'

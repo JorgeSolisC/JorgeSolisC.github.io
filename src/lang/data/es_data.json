@@ -115,6 +115,7 @@
     {
       "category": "Other Technologies",
       "items": [
+        "jQuery",
         "Node.js",
         "Vite",
         "ESLint"
