@@ -26,19 +26,19 @@
 						<h2 class="text-xl font-semibold text-center text-gray-700 mb-2">{{ profileData.position }}</h2>
 						<div class="text-sm text-gray-600 text-center flex flex-wrap justify-center gap-x-4">
 							<span v-if="profileData.phone" class="flex items-center">
-								{{ profileData.phone }}
+								<i class="pi pi-phone mr-1" /> {{ profileData.phone }}
 							</span>
 							<span v-if="profileData.email" class="flex items-center">
-								{{ profileData.email }}
+								<i class="pi pi-envelope mr-1" /> {{ profileData.email }}
 							</span>
 							<span v-if="profileData.socialLinks.linkedin" class="flex items-center">
 								<a :href="profileData.socialLinks.linkedin" target="_blank" rel="noopener noreferrer">
-									<i class="fab fa-linkedin mr-1" /> LinkedIn
+									<i class="pi pi-linkedin mr-1" /> {{ profileData.socialLinks.linkedin }}
 								</a>
 							</span>
 							<span v-if="profileData.socialLinks.github" class="flex items-center">
 								<a :href="profileData.socialLinks.github" target="_blank" rel="noopener noreferrer">
-									<i class="fab fa-github mr-1" /> GitHub
+									<i class="pi pi-github mr-1" /> {{ profileData.socialLinks.github }} 
 								</a>
 							</span>
 						</div>
