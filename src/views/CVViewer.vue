@@ -65,6 +65,7 @@
 						<div v-for="(exp, index) in profileData.experiences" :key="index" class="mb-1 last:mb-0">
 							<h4 class="text-md font-bold">{{ exp.title }} | {{ exp.company }} | {{ exp.location }}</h4>
 							<p class="text-sm italic">{{ exp.period }}</p>
+							<p class="text-sm leading-relaxed">{{ exp.description }}</p>
 							<ul class="list-disc pl-5 text-sm mt-1">
 								<li v-for="(resp, i) in exp.responsibilities || []" :key="i">{{ resp }}</li>
 							</ul>

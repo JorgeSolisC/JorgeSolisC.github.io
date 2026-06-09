@@ -7,6 +7,43 @@
   "summary": "Results-oriented Full-Stack Developer with extensive experience in PHP/Laravel. I combine strong ethical values and a disciplined approach with a passion for development and a high ability to adapt to new technologies. My analytical mindset and commitment to code quality and efficiency allow me to deliver innovative solutions that meet both project and organizational goals.",
   "experiences": [
     {
+      "title": "Full-Stack Developer",
+      "location": "Aguascalientes, Ags., Mexico",
+      "company": "CCEO – Software Development",
+      "period": "August 2018 - May 2026",
+      "description": "Technical leadership and development throughout the full lifecycle of highly critical enterprise web platforms (ERP and E-commerce). Specialized in the architecture and implementation of robust systems using Laravel and Vue.js, optimizing data persistence and business scalability.",
+      "responsibilities": [
+        "Design and architecture of critical ERP modules focused on financial management, inventory, and automated reporting using PHP/Laravel and MySQL.",
+        "Led the migration and modernization of frontend interfaces using Vue 3 and optimized component reactivity.",
+        "Designed, documented, and implemented RESTful APIs integrated with payment gateways (Stripe, webhooks) and third-party services.",
+        "Optimized complex SQL queries and database design, reducing backend response times in transactional modules.",
+        "Implemented clean architectures (Repository Pattern, Service Layers) and ensured code quality through automated testing and code coverage.",
+        "Provided technical mentorship to junior developers and actively collaborated in agile cells under the SCRUM framework."
+      ],
+      "skills": [
+        "Laravel",
+        "Vue",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Stripe API",
+        "Webhooks",
+        "MVC Architecture",
+        "Repository Pattern",
+        "Automated Testing",
+        "Git/GitHub",
+        "SCRUM"
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "location": "Aguascalientes, Ags., Mexico",
+      "company": "MyShell Software Lab",
+      "period": "March 2020 - Present",
+      "description": "Participating as a developer at MyShell, implementing new features in existing npm packages for Vue.js and developing custom tools that optimize developer workflows.",
+      "skills": ["NPM", "Vue.js", "Open Source", "JavaScript", "Vite"]
+    },
+    {
       "title": "General Mechanic",
       "location": "Teocaltiche, Jalisco.",
       "company": "Transmisiones Díaz",
@@ -17,46 +54,6 @@
         "Mechanical diagnostics",
         "Engine repair"
       ]
-    },
-    {
-      "title": "Full-Stack Developer",
-      "location": "Aguascalientes, Ags.",
-      "company": "CCEO – Software Development",
-      "period": "August 2018 - Present",
-      "description": "Development of enterprise web platforms (ERP, Ecommerce) using Laravel as the main framework. Participation throughout the development cycle, from requirements analysis to production deployment. Implementation of technical solutions following quality standards and MVC architecture.",
-      "responsibilities": [
-        "Backend development with PHP/Laravel and MySQL databases",
-        "Frontend interface creation using Vue",
-        "API RESTful design and implementation",
-        "Participation in Scrum teams (planning, sprints, retrospectives)",
-        "Version control with Git/GitHub",
-        "Bug fixing and performance optimization",
-        "Implementation of automated testing"
-      ],
-      "skills": [
-        "Laravel",
-        "Vue",
-        "PHP",
-        "MySQL",
-        "JavaScript",
-        "Bootstrap",
-        "CSS",
-        "HTML",
-        "SCRUM",
-        "MVC Architecture",
-        "Automated Testing",
-        "API Development",
-        "Git/GitHub",
-        "Bug Resolution"
-      ]
-    },
-    {
-      "title": "Developer",
-      "location": "Aguascalientes, Ags.",
-      "company": "MyShell Software Lab",
-      "period": "March 2020 - Present",
-      "description": "Developer at MyShell, implementing new features in existing npm packages for Vue.js and developing custom tools to streamline developers' workflows.",
-      "skills": ["NPM", "Vue"]
     }
   ],
   "education": [
@@ -114,17 +111,12 @@
     },
     {
       "category": "Other Technologies",
-      "items": [
-        "jQuery",
-        "Node.js",
-        "Vite",
-        "ESLint"
-      ]
+      "items": ["jQuery", "Node.js", "Vite", "ESLint"]
     }
   ],
   "languages": [
-    {"name": "Spanish", "level": "Native"},
-    {"name": "English", "level": "A2"}
+    { "name": "Spanish", "level": "Native" },
+    { "name": "English", "level": "A2" }
   ],
   "softSkills": [
     "Responsibility",
