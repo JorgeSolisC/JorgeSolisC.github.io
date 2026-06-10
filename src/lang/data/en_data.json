@@ -21,6 +21,7 @@
         "Provided technical mentorship to junior developers and actively collaborated in agile cells under the SCRUM framework."
       ],
       "skills": [
+        "AdonisJs",
         "Laravel",
         "Vue",
         "PHP",
@@ -83,7 +84,7 @@
     },
     {
       "category": "Backend Web Frameworks",
-      "items": ["Laravel"]
+      "items": ["Laravel", "AdonisJs"]
     },
     {
       "category": "Frontend Web Frameworks",

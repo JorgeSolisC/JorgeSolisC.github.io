@@ -21,6 +21,7 @@
         "Mentoría técnica a desarrolladores junior y colaboración activa en células ágiles bajo el marco de trabajo SCRUM."
       ],
       "skills": [
+        "AdonisJs",
         "Laravel",
         "Vue",
         "PHP",
@@ -83,7 +84,7 @@
     },
     {
       "category": "Backend Web Frameworks",
-      "items": ["Laravel"]
+      "items": ["Laravel", "AdonisJs"]
     },
     {
       "category": "Frontend Web Frameworks",
