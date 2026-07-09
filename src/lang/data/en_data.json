@@ -4,14 +4,14 @@
   "email": "jorgearmando.soliscruz@gmail.com",
   "phone": "346-100-48-32",
   "location": "Aguascalientes, Ags.",
-  "summary": "Results-oriented Full-Stack Developer with extensive experience in PHP/Laravel. I combine strong ethical values and a disciplined approach with a passion for development and a high ability to adapt to new technologies. My analytical mindset and commitment to code quality and efficiency allow me to deliver innovative solutions that meet both project and organizational goals.",
+  "summary": "Results-oriented Full-Stack Developer with extensive experience in PHP/Laravel y Vue. I combine strong ethical values and a disciplined approach with a passion for development and a high ability to adapt to new technologies. My analytical mindset and commitment to code quality and efficiency allow me to deliver innovative solutions that meet both project and organizational goals.",
   "experiences": [
     {
       "title": "Full-Stack Developer",
       "location": "Aguascalientes, Ags., Mexico",
       "company": "CCEO – Software Development",
       "period": "August 2019 - May 2026",
-      "description": "Technical leadership and development throughout the full lifecycle of highly critical enterprise web platforms (ERP and E-commerce). Specialized in the architecture and implementation of robust systems using Laravel and Vue.js, optimizing data persistence and business scalability.",
+      "description": "Technical leadership and full-cycle development of robust enterprise web platforms (ERP & E-commerce). Specialized in the architecture and implementation of large-scale systems using Laravel and Vue.js, optimizing data persistence and business scalability.",
       "responsibilities": [
         "Design and architecture of critical ERP modules focused on financial management, inventory, and automated reporting using PHP/Laravel and MySQL.",
         "Led the migration and modernization of frontend interfaces using Vue 3 and optimized component reactivity.",
