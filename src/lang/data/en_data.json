@@ -1,87 +1,60 @@
 {
   "name": "Jorge Armando Solis Cruz",
-  "position": "Full-Stack Developer",
+  "position": "Full-Stack Software Engineer | Laravel, Vue.js & .NET",
   "email": "jorgearmando.soliscruz@gmail.com",
   "phone": "346-100-48-32",
   "location": "Aguascalientes, Ags.",
-  "summary": "Results-oriented Full-Stack Developer with extensive experience in PHP/Laravel y Vue. I combine strong ethical values and a disciplined approach with a passion for development and a high ability to adapt to new technologies. My analytical mindset and commitment to code quality and efficiency allow me to deliver innovative solutions that meet both project and organizational goals.",
+  "summary": "Computer Systems Engineer and Full-Stack Developer with over 6 years of experience in designing, developing, and scaling enterprise web platforms (ERP, E-commerce, and SaaS). Specialized in backend architecture with PHP (Laravel) and reactive frontend with Vue.js / JavaScript. Possesses foundational knowledge in C# and .NET, relational databases (MySQL, SQL Server, SQLite), as well as experience in building custom tools, integrating payment gateways (Stripe), and Agile methodologies (SCRUM).",
   "experiences": [
     {
       "title": "Full-Stack Developer",
-      "location": "Aguascalientes, Ags., Mexico",
+      "location": "Aguascalientes, Ags.",
       "company": "CCEO – Software Development",
       "period": "August 2019 - May 2026",
-      "description": "Technical leadership and full-cycle development of robust enterprise web platforms (ERP & E-commerce). Specialized in the architecture and implementation of large-scale systems using Laravel and Vue.js, optimizing data persistence and business scalability.",
+      "description": "Technical leadership and full-cycle development of large-scale enterprise web platforms (ERP and E-commerce). Specialized in system architecture and implementation using Laravel and Vue.js, optimizing data persistence and business scalability.",
       "responsibilities": [
         "Design and architecture of critical ERP modules focused on financial management, inventory, and automated reporting using PHP/Laravel and MySQL.",
-        "Led the migration and modernization of frontend interfaces using Vue 3 and optimized component reactivity.",
-        "Designed, documented, and implemented RESTful APIs integrated with payment gateways (Stripe, webhooks) and third-party services.",
-        "Optimized SQL queries and database design, reducing backend response times in transactional modules.",
-        "Implemented clean architectures (Repository Pattern, Service Layers) and ensured code quality through automated testing and code coverage.",
-        "Provided technical mentorship to junior developers and actively collaborated in agile cells under the SCRUM framework."
+        "Led the migration and modernization of frontend interfaces using Vue 3 and component reactivity optimization.",
+        "Design, documentation, and implementation of RESTful APIs integrated with payment gateways (Stripe, webhooks) and third-party services.",
+        "Optimization of SQL queries and database design, reducing backend response times in transactional modules.",
+        "Implementation of clean architectures (Repository Pattern, Service Layers) and quality assurance through automated testing and code coverage.",
+        "Technical mentorship for junior developers and active collaboration in agile pods under the SCRUM framework."
       ],
       "skills": [
-        "AdonisJs",
         "Laravel",
-        "Vue",
+        "Vue.js",
         "PHP",
-        "MySQL",
         "JavaScript",
+        "MySQL",
         "Stripe API",
         "Webhooks",
-        "MVC Architecture",
+        "RESTful APIs",
+        "AdonisJs",
         "Repository Pattern",
         "Automated Testing",
         "Git/GitHub",
+        "SQLite",
         "SCRUM"
       ]
     },
     {
-      "title": "Software Developer",
-      "location": "Aguascalientes, Ags., Mexico",
+      "title": "Software Developer / Contributor",
+      "location": "Aguascalientes, Ags.",
       "company": "MyShell Software Lab",
       "period": "March 2020 - Present",
-      "description": "Participating as a developer at MyShell, implementing new features in existing npm packages for Vue.js and developing custom tools that optimize developer workflows.",
-      "skills": ["NPM", "Vue.js", "Open Source", "JavaScript", "Vite"]
-    },
-    {
-      "title": "General Mechanic",
-      "location": "Teocaltiche, Jalisco.",
-      "company": "Transmisiones Díaz",
-      "period": "August 2014 - December 2014",
-      "description": "Corrective and preventive maintenance for internal combustion vehicles.",
-      "skills": [
-        "Automotive maintenance",
-        "Mechanical diagnostics",
-        "Engine repair"
-      ]
+      "description": "Maintenance and feature development for Open Source packages distributed via npm for the Vue.js ecosystem, along with building custom tools designed to optimize developer workflows.",
+      "skills": ["Vue.js", "JavaScript", "NPM", "Vite", "Open Source"]
     }
   ],
   "education": [
     {
-      "degree": "Technical High School",
-      "institution": "CBTIS 247, Teocaltiche",
-      "period": "2011 - 2014",
-      "description": "Automotive Maintenance Technician."
-    },
-    {
-      "degree": "English Certification",
-      "institution": "English For All",
-      "period": "2014 - 2017",
-      "description": "Technical English Training."
-    },
-    {
       "degree": "Computer Systems Engineering",
-      "institution": "Technological Institute of Nochistlán",
+      "institution": "Instituto Tecnológico Superior de Nochistlán",
       "period": "2014 - 2018",
-      "description": "Training in software development, networks, and databases."
+      "description": "Comprehensive background in software development (OOP, C#, .NET, Android Studio), relational database management (SQL Server, MySQL), and network architecture."
     }
   ],
   "skills": [
-    {
-      "category": "Programming Languages",
-      "items": ["JavaScript", "PHP", "C#"]
-    },
     {
       "category": "Backend Web Frameworks",
       "items": ["Laravel", "AdonisJs"]
@@ -91,50 +64,36 @@
       "items": ["Vue.js"]
     },
     {
-      "category": "Desktop Applications",
-      "items": [".NET"]
+      "category": "Programming Languages",
+      "items": ["PHP", "JavaScript", "TypeScript", "jQuery", "C#"]
     },
     {
-      "category": "Mobile Applications",
-      "items": ["Android Studio"]
+      "category": "Desktop & Mobile Applications",
+      "items": [".NET", "Android Studio"]
     },
     {
       "category": "Databases",
-      "items": ["MySQL", "SQLServer"]
+      "items": ["MySQL", "SQLServer", "SQLite"]
     },
     {
       "category": "CSS Frameworks",
-      "items": ["Tailwind", "Bootstrap"]
+      "items": ["Tailwind CSS", "Bootstrap"]
     },
     {
-      "category": "Version Control",
-      "items": ["Git"]
-    },
-    {
-      "category": "Other Technologies",
-      "items": ["jQuery", "Node.js", "Vite", "ESLint"]
+      "category": "Version Control & Tools",
+      "items": ["Git", "Node.js", "Vite", "ESLint", "RESTful APIs", "Stripe API", "Postman"]
     }
   ],
   "languages": [
     { "name": "Spanish", "level": "Native" },
     { "name": "English", "level": "A2" }
   ],
-  "softSkills": [
-    "Responsibility",
-    "Commitment",
-    "Organization",
-    "Problem solving",
-    "Teamwork"
-  ],
+  "softSkills": [],
   "certifications": [
-    { "name": "Microsoft Office Technologies", "date": "June 2013" },
-    { "name": "Campus Party Mexico", "date": "July 2016" },
-    { "name": "Windows Phone 8 Course (ITESO)", "date": "October 2016" },
-    { "name": "Zacatecas Hackathon", "date": "June 2017" },
-    { "name": "CIMPS Congress", "date": "October 2017" },
-    { "name": "Selenium Workshop", "date": "May 2018" }
+    { "name": "Selenium Workshop / Test Automation", "date": "May 2018" },
+    { "name": "Technical English Certification - English For All", "date": "2014 - 2017" }
   ],
-  "hobbies": ["Soccer", "Music", "Drumming", "Video games"],
+  "hobbies": [],
   "socialLinks": {
     "linkedin": "linkedin.com/in/jorge-solisc",
     "github": "github.com/JorgeSolisC"

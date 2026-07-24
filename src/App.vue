@@ -20,11 +20,15 @@
 					<div class="space-y-8">
 						<CvSkills :skills="profileData.skills" />
 						<CvLanguages :languages="profileData.languages" />
-						<CvSoftSkills :softSkills="profileData.softSkills" />
+						<CvSoftSkills 
+							v-if="profileData.softSkills?.length > 0" 
+							:softSkills="profileData.softSkills" />
 						<CvCertifications
 							:certifications="profileData.certifications" />
 						<CvContact :socialLinks="profileData.socialLinks" />
-						<CvHobbies :hobbies="profileData.hobbies" />
+						<CvHobbies 
+							v-if="profileData.hobbies?.length > 0" 
+							:hobbies="profileData.hobbies" />
 					</div>
 				</div>
 			</div>

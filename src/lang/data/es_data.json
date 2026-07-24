@@ -1,17 +1,17 @@
 {
   "name": "Jorge Armando Solis Cruz",
-  "position": "Desarrollador Full-Stack",
+  "position": "Full-Stack Software Engineer | Laravel, Vue.js & .NET",
   "email": "jorgearmando.soliscruz@gmail.com",
   "phone": "346-100-48-32",
   "location": "Aguascalientes, Ags.",
-  "summary": "Desarrollador Full-Stack orientado a resultados, con amplia experiencia en PHP/Laravel y Vue. Combino sólidos valores éticos y un enfoque disciplinado con pasión por el desarrollo y gran capacidad de adaptación a nuevas tecnologías. Mi mentalidad analítica y compromiso con la calidad del código y la eficiencia me permiten entregar soluciones innovadoras que cumplen con los objetivos del proyecto y de la organización.",
+  "summary": "Ingeniero en Sistemas Computacionales y Desarrollador Full-Stack con más de 6 años de experiencia en el diseño, desarrollo y escalamiento de plataformas web empresariales (ERP, E-commerce y SaaS). Especializado en la arquitectura backend con PHP (Laravel) y frontend reactivo con Vue.js / JavaScript. Cuenta con conocimientos fundamentales en C# y .NET, bases de datos relacionales (MySQL, SQL Server, SQLite), así como experiencia en la creación de herramientas personalizadas, integración de pasarelas de pago (Stripe) y metodologías Ágiles (SCRUM).",
   "experiences": [
     {
       "title": "Desarrollador Full-Stack",
       "location": "Aguascalientes, Ags.",
       "company": "CCEO – Software Development",
       "period": "Agosto 2019 - Mayo 2026",
-      "description": "Liderazgo técnico y desarrollo en el ciclo completo de plataformas web empresariales robustas (ERP y E-commerce). Especializado en la arquitectura e implementación de sistemas de gran escala utilizando Laravel y Vue.js, optimizando la persistencia de datos y la escalabilidad del negocio.",
+      "description": "Liderazgo técnico y desarrollo en el ciclo completo de plataformas web empresariales de gran escala (ERP y E-commerce). Especializado en la arquitectura e implementación de sistemas utilizando Laravel y Vue.js, optimizando la persistencia de datos y la escalabilidad del negocio.",
       "responsibilities": [
         "Diseño y arquitectura de módulos críticos para ERPs enfocados en la gestión financiera, inventarios y reportes automatizados utilizando PHP/Laravel y MySQL.",
         "Liderazgo en la migración y modernización de interfaces frontend utilizando Vue 3 y optimización de la reactividad de componentes.",
@@ -21,67 +21,40 @@
         "Mentoría técnica a desarrolladores junior y colaboración activa en células ágiles bajo el marco de trabajo SCRUM."
       ],
       "skills": [
-        "AdonisJs",
         "Laravel",
-        "Vue",
+        "Vue.js",
         "PHP",
-        "MySQL",
         "JavaScript",
+        "MySQL",
         "Stripe API",
         "Webhooks",
-        "Arquitectura MVC",
+        "RESTful APIs",
+        "AdonisJs",
         "Repository Pattern",
         "Pruebas automatizadas",
         "Git/GitHub",
+        "SQLite",
         "SCRUM"
       ]
     },
     {
-      "title": "Desarrollador",
+      "title": "Desarrollador Software / Contribuidor",
       "location": "Aguascalientes, Ags.",
       "company": "MyShell Software Lab",
       "period": "Marzo 2020 - Actualmente",
-      "description": "Participación como desarrollador en MyShell, implementando nuevas funcionalidades en paquetes existentes de npm para Vue.js y desarrollando herramientas personalizadas que optimizan el flujo de trabajo de los desarrolladores.",
-      "skills": ["NPM", "Vue.js", "Open Source", "JavaScript", "Vite"]
-    },
-    {
-      "title": "Mecánico general",
-      "location": "Teocaltiche, Jalisco.",
-      "company": "Transmisiones Díaz",
-      "period": "Agosto 2014 - Diciembre 2014",
-      "description": "Mantenimiento correctivo y preventivo a vehículos de combustión interna.",
-      "skills": [
-        "Mantenimiento automotriz",
-        "Diagnóstico mecánico",
-        "Reparación de motores"
-      ]
+      "description": "Mantenimiento y desarrollo de nuevas funcionalidades en paquetes Open Source distribuidos en npm para el ecosistema Vue.js y creación de herramientas personalizadas enfocadas en optimizar el flujo de trabajo de desarrolladores.",
+      "skills": ["Vue.js", "JavaScript", "NPM", "Vite", "Open Source"]
     }
   ],
   "education": [
     {
-      "degree": "Bachillerato Técnico",
-      "institution": "CBTIS 247, Teocaltiche",
-      "period": "2011 - 2014",
-      "description": "Técnico en Mantenimiento Automotriz."
-    },
-    {
-      "degree": "Certificación en Inglés",
-      "institution": "English For All",
-      "period": "2014 - 2017",
-      "description": "Técnico en Inglés."
-    },
-    {
       "degree": "Ingeniería en Sistemas Computacionales",
       "institution": "Instituto Tecnológico Superior de Nochistlán",
       "period": "2014 - 2018",
-      "description": "Formación en desarrollo de software, redes y bases de datos."
+      "description": "Formación integral en desarrollo de software (POO, C#, .NET, Android Studio), gestión de bases de datos relacionales (SQL Server, MySQL) y arquitectura de redes."
     }
   ],
   "skills": [
-    {
-      "category": "Programming Languages",
-      "items": ["JavaScript", "PHP", "C#"]
-    },
     {
       "category": "Backend Web Frameworks",
       "items": ["Laravel", "AdonisJs"]
@@ -91,50 +64,36 @@
       "items": ["Vue.js"]
     },
     {
-      "category": "Desktop Applications",
-      "items": [".NET"]
+      "category": "Programming Languages",
+      "items": ["PHP", "JavaScript", "TypeScript", "jQuery", "C#"]
     },
     {
-      "category": "Mobile Applications",
-      "items": ["Android Studio"]
+      "category": "Desktop & Mobile Applications",
+      "items": [".NET", "Android Studio"]
     },
     {
       "category": "Databases",
-      "items": ["MySQL", "SQLServer"]
+      "items": ["MySQL", "SQLServer", "SQLite"]
     },
     {
       "category": "CSS Frameworks",
-      "items": ["Tailwind", "Bootstrap"]
+      "items": ["Tailwind CSS", "Bootstrap"]
     },
     {
-      "category": "Version Control",
-      "items": ["Git"]
-    },
-    {
-      "category": "Other Technologies",
-      "items": ["jQuery", "Node.js", "Vite", "ESLint"]
+      "category": "Version Control & Tools",
+      "items": ["Git", "Node.js", "Vite", "ESLint", "RESTful APIs", "Stripe API", "Postman"]
     }
   ],
   "languages": [
     { "name": "Español", "level": "Nativo" },
-    { "name": "Ingles", "level": "A2" }
+    { "name": "Inglés", "level": "A2" }
   ],
-  "softSkills": [
-    "Responsabilidad",
-    "Compromiso",
-    "Organización",
-    "Resolución de problemas",
-    "Trabajo en equipo"
-  ],
+  "softSkills": [],
   "certifications": [
-    { "name": "Tecnologías Microsoft Office", "date": "Junio 2013" },
-    { "name": "Campus Party México", "date": "Julio 2016" },
-    { "name": "Curso Windows Phone 8 (ITESO)", "date": "Octubre 2016" },
-    { "name": "Hackaton Zacatecas", "date": "Junio 2017" },
-    { "name": "Congreso CIMPS", "date": "Octubre 2017" },
-    { "name": "Taller Selenium", "date": "Mayo 2018" }
+    { "name": "Taller Selenium / Automatización de Pruebas", "date": "Mayo 2018" },
+    { "name": "Certificación Técnico en Inglés - English For All", "date": "2014 - 2017" }
   ],
-  "hobbies": ["Fútbol", "Música", "Tocar la batería", "Videojuegos"],
+  "hobbies": [],
   "socialLinks": {
     "linkedin": "linkedin.com/in/jorge-solisc",
     "github": "github.com/JorgeSolisC"
